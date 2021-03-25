@@ -91,7 +91,7 @@ public abstract class BarcodeScannerView extends FrameLayout implements Camera.P
         }
         
         if (mViewFinderView instanceof View) {
-           // addView((View) mViewFinderView);
+           addView((View) mViewFinderView);
         } else {
             throw new IllegalArgumentException("IViewFinder object returned by " +
                     "'createViewFinderView()' should be instance of android.view.View");
