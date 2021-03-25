@@ -63,7 +63,7 @@ public class ViewFinderView extends View implements IViewFinder {
 
         //finder mask paint
          mFinderMaskPaint = new Paint();
-//         mFinderMaskPaint.setColor(mDefaultMaskColor);
+         mFinderMaskPaint.setColor(mDefaultMaskColor);
 
         //border paint
         mBorderPaint = new Paint();
