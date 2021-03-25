@@ -57,22 +57,22 @@ public class ViewFinderView extends View implements IViewFinder {
 
     private void init() {
         //set up laser paint
-        mLaserPaint = new Paint();
-        mLaserPaint.setColor(mDefaultLaserColor);
-        mLaserPaint.setStyle(Paint.Style.FILL);
+//         mLaserPaint = new Paint();
+//         mLaserPaint.setColor(mDefaultLaserColor);
+//         mLaserPaint.setStyle(Paint.Style.FILL);
 
-        //finder mask paint
-        mFinderMaskPaint = new Paint();
-        mFinderMaskPaint.setColor(mDefaultMaskColor);
+//         //finder mask paint
+//         mFinderMaskPaint = new Paint();
+//         mFinderMaskPaint.setColor(mDefaultMaskColor);
 
-        //border paint
-        mBorderPaint = new Paint();
-        mBorderPaint.setColor(mDefaultBorderColor);
-        mBorderPaint.setStyle(Paint.Style.STROKE);
-        mBorderPaint.setStrokeWidth(mDefaultBorderStrokeWidth);
-        mBorderPaint.setAntiAlias(true);
+//         //border paint
+//         mBorderPaint = new Paint();
+//         mBorderPaint.setColor(mDefaultBorderColor);
+//         mBorderPaint.setStyle(Paint.Style.STROKE);
+//         mBorderPaint.setStrokeWidth(mDefaultBorderStrokeWidth);
+//         mBorderPaint.setAntiAlias(true);
 
-        mBorderLineLength = mDefaultBorderLineLength;
+//         mBorderLineLength = mDefaultBorderLineLength;
     }
 
     @Override
