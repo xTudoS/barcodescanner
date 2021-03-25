@@ -250,18 +250,11 @@ public class ViewFinderView extends View implements IViewFinder {
         if(height > getHeight()) {
             height = getHeight() - MIN_DIMENSION_DIFF;
         }
-        
-        if(orientation == Configuration.ORIENTATION_PORTRAIT){
-            height = getHeight()
-            width = getWidth() 
-        } else {
-            width = getHeight()
-            height = getWidth() 
-        }
+       
 
         int leftOffset = (viewResolution.x - width) / 2;
         int topOffset = (viewResolution.y - height) / 2;
-        mFramingRect = new Rect(height, width, height, width);
+        mFramingRect = new Rect(width, height, width, height);
     }
 }
 
