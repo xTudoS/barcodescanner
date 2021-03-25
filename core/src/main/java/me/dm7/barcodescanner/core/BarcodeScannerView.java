@@ -108,17 +108,17 @@ public abstract class BarcodeScannerView extends FrameLayout implements Camera.P
      */
     protected IViewFinder createViewFinderView(Context context) {
         ViewFinderView viewFinderView = new ViewFinderView(context);
-        viewFinderView.setBorderColor(mBorderColor);
-        viewFinderView.setLaserColor(mLaserColor);
-        viewFinderView.setLaserEnabled(mIsLaserEnabled);
-        viewFinderView.setBorderStrokeWidth(mBorderWidth);
-        viewFinderView.setBorderLineLength(mBorderLength);
-        viewFinderView.setMaskColor(mMaskColor);
+//         viewFinderView.setBorderColor(mBorderColor);
+//         viewFinderView.setLaserColor(mLaserColor);
+//         viewFinderView.setLaserEnabled(mIsLaserEnabled);
+//         viewFinderView.setBorderStrokeWidth(mBorderWidth);
+//         viewFinderView.setBorderLineLength(mBorderLength);
+//         viewFinderView.setMaskColor(mMaskColor);
 
-        viewFinderView.setBorderCornerRounded(mRoundedCorner);
-        viewFinderView.setBorderCornerRadius(mCornerRadius);
-        viewFinderView.setSquareViewFinder(mSquaredFinder);
-        viewFinderView.setViewFinderOffset(mViewFinderOffset);
+//         viewFinderView.setBorderCornerRounded(mRoundedCorner);
+//         viewFinderView.setBorderCornerRadius(mCornerRadius);
+//         viewFinderView.setSquareViewFinder(mSquaredFinder);
+//         viewFinderView.setViewFinderOffset(mViewFinderOffset);
         return viewFinderView;
     }
 
