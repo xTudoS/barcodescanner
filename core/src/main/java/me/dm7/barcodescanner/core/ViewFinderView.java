@@ -16,14 +16,14 @@ public class ViewFinderView extends View implements IViewFinder {
 
     private Rect mFramingRect;
 
-    private static final float PORTRAIT_WIDTH_RATIO = 6f/8;
-    private static final float PORTRAIT_WIDTH_HEIGHT_RATIO = 0.75f;
+    private static final float PORTRAIT_WIDTH_RATIO = 1;
+    private static final float PORTRAIT_WIDTH_HEIGHT_RATIO = 1;
 
-    private static final float LANDSCAPE_HEIGHT_RATIO = 5f/8;
-    private static final float LANDSCAPE_WIDTH_HEIGHT_RATIO = 1.4f;
+    private static final float LANDSCAPE_HEIGHT_RATIO = 1;
+    private static final float LANDSCAPE_WIDTH_HEIGHT_RATIO = 1;
     private static final int MIN_DIMENSION_DIFF = 50;
 
-    private static final float DEFAULT_SQUARE_DIMENSION_RATIO = 5f / 8;
+    private static final float DEFAULT_SQUARE_DIMENSION_RATIO = 1;
 
     private static final int[] SCANNER_ALPHA = {0, 64, 128, 192, 255, 192, 128, 64};
     private int scannerAlpha;
@@ -254,7 +254,6 @@ public class ViewFinderView extends View implements IViewFinder {
 
         int leftOffset = (viewResolution.x - width) / 2;
         int topOffset = (viewResolution.y - height) / 2;
-        mFramingRect = new Rect(width, height, width, height);
-    }
+        mFramingRect = new Rect(leftOffset + mViewFinderOffset, topOffset + mViewFinderOffset, leftOffset + width - mViewFinderOffset, topOffset + height - mViewFinderOffset);    }
 }
 
