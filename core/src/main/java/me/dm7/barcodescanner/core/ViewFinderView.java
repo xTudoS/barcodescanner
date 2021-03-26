@@ -2,6 +2,7 @@ package me.dm7.barcodescanner.core;
 
 import android.content.Context;
 import android.content.res.Configuration;
+import android.content.res.Resources;
 import android.graphics.Canvas;
 import android.graphics.CornerPathEffect;
 import android.graphics.Paint;
@@ -254,6 +255,15 @@ public class ViewFinderView extends View implements IViewFinder {
 
         int leftOffset = (viewResolution.x - width) / 2;
         int topOffset = (viewResolution.y - height) / 2;
-        mFramingRect = new Rect(0,0,   height , width);    }
+        mFramingRect = new Rect(0,0,   getScreenHeight() , getScreenWidth());
+    }
+
+    public static int getScreenWidth() {
+        return Resources.getSystem().getDisplayMetrics().widthPixels;
+    }
+
+    public static int getScreenHeight() {
+        return Resources.getSystem().getDisplayMetrics().heightPixels;
+    }
 }
 
