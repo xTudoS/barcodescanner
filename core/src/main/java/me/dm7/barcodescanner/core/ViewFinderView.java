@@ -254,6 +254,6 @@ public class ViewFinderView extends View implements IViewFinder {
 
         int leftOffset = (viewResolution.x - width) / 2;
         int topOffset = (viewResolution.y - height) / 2;
-        mFramingRect = new Rect(0,0,  width,  height );    }
+        mFramingRect = new Rect(0,0,   height , width);    }
 }
 
