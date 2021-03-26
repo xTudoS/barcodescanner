@@ -224,14 +224,19 @@ public class ViewFinderView extends View implements IViewFinder {
         int width;
         int height;
         int orientation = DisplayUtils.getScreenOrientation(getContext());
+        
+        width = getScreenWidth();
+        height = getScreenHeight();
 
-        if(orientation == Configuration.ORIENTATION_PORTRAIT){
-            width = getScreenWidth();
-            height = getScreenHeight();
-        } else {
-            height = getScreenWidth();
-            width = getScreenHeight();
-        }
+//         if(orientation == Configuration.ORIENTATION_PORTRAIT){
+            
+            
+//             width = getScreenWidth();
+//         height = getScreenHeight();
+//         } else {
+//             height = getScreenWidth();
+//             width = getScreenHeight();
+//         }
 
         mFramingRect = new Rect(0,0,  width , height );
     }
